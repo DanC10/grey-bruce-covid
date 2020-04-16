@@ -1,4 +1,4 @@
-# grey-bruce-covid
+# Grey Bruce COVID-19 Tracker
 
 An Angular web app to track the spread of COVID-19 in the Grey Bruce region.
 
