@@ -1,0 +1,23 @@
+/* General */
+body{
+    overflow: hidden;
+}
+.header{
+    text-align: center;
+    width: 99vw;
+    margin: 10px;
+}
+md-toolbar {
+    background-color: black !important;
+}
+.headerTitle{
+    margin: auto !important;
+    font-weight: bold;
+}
+.dialogs{
+    height: 75vh;
+    width: 50vw;
+}
+.chartCard{
+    height: 100%;
+}

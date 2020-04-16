@@ -1,5 +1,7 @@
+greyBruceCovidTracker.controller('homeCtrl', function(dataFac) {
+this.$onInit = () => {
+dataFac.getCOVID19Data().then((res) => {})
 
-am4core.ready(() => {
     let data = [];
 
     let chart = am4core.create("chartdiv", am4charts.XYChart);
@@ -18,4 +20,5 @@ am4core.ready(() => {
     series.dataFields.valueX = "ROW_ID";
 
     chart.data = data;
-})
+}
+});

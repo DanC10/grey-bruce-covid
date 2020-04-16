@@ -1,0 +1,31 @@
+{
+  "name": "grey-bruce-covid-tracker",
+  "version": "1.0.0",
+  "description": "A tool to track the cases of COVID-19 in grey bruce.",
+  "main": "app.modules.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanC10/grey-bruce-covid.git"
+  },
+  "author": "Daniel Cleary",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanC10/grey-bruce-covid/issues"
+  },
+  "homepage": "https://github.com/DanC10/grey-bruce-covid#readme",
+  "dependencies": {
+    "angular": "^1.7.8",
+    "angular-animate": "^1.7.8",
+    "angular-aria": "^1.7.8",
+    "angular-material": "^1.1.19",
+    "angular-material-icons": "^0.7.1",
+    "angular-messages": "^1.7.8",
+    "angular-sanitize": "^1.7.9",
+    "angular-ui-router": "^1.0.22",
+    "lite-server": "^2.5.3"
+  }
+}

@@ -1,0 +1,3 @@
+greyBruceCovidTracker.controller('aboutCtrl', function() {
+
+});
