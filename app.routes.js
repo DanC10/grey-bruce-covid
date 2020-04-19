@@ -3,15 +3,21 @@ greyBruceCovidTracker.config(function($stateProvider, $urlRouterProvider) {
     //States
     $stateProvider.state('/home', {
       url : '/home',
-          templateUrl : 'templates/home.tmpl.html',
-          controller : 'homeCtrl',
-          controllerAs: "$ctrl"
+          template: "<home-page></home-page>",
+          resolve: {
+            $title: function () {
+              return 'Home';
+            }
+          }
       })
       .state('/about',{
         url:'/about',
-        templateUrl: 'templates/about.tmpl.html',
-        controller: 'aboutCtrl',
-        controllerAs: '$ctrl'
+        template: "<about-page></about-page>",
+        resolve: {
+          $title: function () {
+            return 'About';
+          }
+        }
       });
 
       //If no valid state, redirect to home

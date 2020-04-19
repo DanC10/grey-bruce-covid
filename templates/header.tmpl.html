@@ -1,13 +1,13 @@
 <md-card layout="row" class="header md-toolbar-tools">
     <md-menu>
         <md-button ng-click="$mdMenu.open()" style="min-width: 0">
-            <md-icon class="material-icons">menu</md-icon>
+            <md-icon class="material-icons headerTitle">menu</md-icon>
         </md-button>
         <md-menu-content>
             <md-menu-item ng-repeat="page in $ctrl.pages">
-                <md-button ng-click="$ctrl.goToPage(page.state)">{{page.name}}</md-button>
+                <md-button ng-click="$ctrl.goToPage(page)">{{page.name}}</md-button>
             </md-menu-item>
         </md-menu-content>
     </md-menu>
-    <span class="headerTitle">Grey Bruce COVID-19 Tracker</span>
+    <span class="headerTitle">Grey Bruce COVID-19 Tracker - {{$ctrl.title}}</span>
 </md-card>

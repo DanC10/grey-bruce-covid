@@ -6,9 +6,16 @@ body{
     text-align: center;
     width: 99vw;
     margin: 10px;
+    background-color: black;
+}
+.headerTitle{
+    color: white;
 }
 md-toolbar {
     background-color: black !important;
+}
+md-card-content{
+    height: 100%; width: 98%;
 }
 .headerTitle{
     margin: auto !important;
@@ -20,4 +27,10 @@ md-toolbar {
 }
 .chartCard{
     height: 100%;
+}
+.aboutCard{
+    height: 100%;
+}
+home-page{
+    height: 98%;
 }

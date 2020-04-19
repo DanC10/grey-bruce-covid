@@ -1,7 +1,8 @@
 <html ng-app="greyBruceCovidTracker">
 
 <head>
-    <title>Grey-Bruce COVID-19</title>
+    <title>Grey-Bruce COVID-19 Tracker</title>
+    <link rel="shortcut icon" href="favicon-32x32.png" />
 
    <!--Angular Dependencies-->
    <script src="node_modules/angular/angular.min.js"></script>
@@ -32,15 +33,15 @@
    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
    <link rel="stylesheet" href="css/main.css"/>
     <!--Controllers-->
-    <script src="controllers/header.controller.js"></script>
-    <script src="controllers/home.controller.js"></script>
-    <script src="controllers/about.controller.js"></script>
+    <script src="components/header.component.js"></script>
+    <script src="components/home.component.js"></script>
+    <script src="components/about.component.js"></script>
     <!--Factories-->
     <script src="factories/data.factory.js"></script>
 </head>
 
 <body>
-    <ng-include ng-controller="headerCtrl as $ctrl" src="'templates/header.tmpl.html'"></ng-include>
+    <page-header></page-header>
     <md-card style="height: calc(100% - 90px);" ui-view></md-card>
 </body>
 
