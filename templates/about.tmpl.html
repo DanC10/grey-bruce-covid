@@ -13,24 +13,49 @@
 
         <p>The "Accurate Episode Date" is described by the iPHIS (integrated Public Health Information System) as an
             estimate of the onset date of disease for a case of COVID-19.</p>
-        <blockquote cite="https://www.publichealthontario.ca/-/media/documents/iphis-user-guide-enteric-zoonotic.pdf?la=en">
+        <blockquote
+            cite="https://www.publichealthontario.ca/-/media/documents/iphis-user-guide-enteric-zoonotic.pdf?la=en">
             <i>
-            The Accurate Episode Date is an estimate of the onset date of disease for a case. In order to determine
-            this date, the following hierarchy is in place in iPHIS:
-            <ul>
-                <li>Onset Date</li>
-                <li>Specimen Collection Date</li>
-                <li>Laboratory Test Date</li>
-                <li>Reported Date</li>
-            </ul>
-            If an Onset Date exists, it will be used in place of the Specimen Collection Date followed by the other
-            episode dates in the hierarchy; however, the earliest date available at each stage of the hierarchy is
-            selected as the Accurate Episode Date. For example, the earlier of two specimen collection dates would
-            be selected as the episode accurate date at the second stage of the hierarchy for a case that has two
-            specimen collection dates, but no symptom onset date in iPHIS. Episode Date Hierarchy prevents cases
-            from being pulled forward in time beyond their Reported Date.
-        </i>
+                The Accurate Episode Date is an estimate of the onset date of disease for a case. In order to determine
+                this date, the following hierarchy is in place in iPHIS:
+                <ul>
+                    <li>Onset Date</li>
+                    <li>Specimen Collection Date</li>
+                    <li>Laboratory Test Date</li>
+                    <li>Reported Date</li>
+                </ul>
+                If an Onset Date exists, it will be used in place of the Specimen Collection Date followed by the other
+                episode dates in the hierarchy; however, the earliest date available at each stage of the hierarchy is
+                selected as the Accurate Episode Date. For example, the earlier of two specimen collection dates would
+                be selected as the episode accurate date at the second stage of the hierarchy for a case that has two
+                specimen collection dates, but no symptom onset date in iPHIS. Episode Date Hierarchy prevents cases
+                from being pulled forward in time beyond their Reported Date.
+            </i>
         </blockquote>
-        <p><b>Please note that the government of Ontario updates their data once daily at 10:30AM, and is accurate as of the previous 24 hours.</b></p>
+        <p><b>Please note that the government of Ontario updates their data once daily at 10:30AM, and is accurate as of
+                the previous 24 hours.</b></p>
+    </md-card-content>
+</md-card>
+<md-card class="statsCard">
+    <md-card-header style="margin: auto">
+        <span><b>Stats</b></span>
+    </md-card-header>
+    <md-divider></md-divider>
+    <md-card-content style="height: 100%; width: 98%;">
+        <div>
+            <ul>
+                <li><b>{{$ctrl.male}}%</b> of cases are <b>Male</b></li>
+                <li><b>{{$ctrl.female}}%</b> of cases are <b>Female</b></li>
+                <li><b>{{$ctrl.resolved}}%</b> of cases are listed as <b>Resolved</b></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><b>{{$ctrl.travel}}%</b> of cases were acquired by <b>Travel</b></li>
+                <li><b>{{$ctrl.contact}}%</b> of cases are a result of <b>Close Contact</b> of a confirmed case</li>
+                <li><b>{{$ctrl.neither}}%</b> of cases are listed as <b>Neither</b></li>
+                <li><b>{{$ctrl.pending}}%</b> of case acquisition info is listed as <b>Pending</b></li>
+            </ul>
+        </div>
     </md-card-content>
 </md-card>
