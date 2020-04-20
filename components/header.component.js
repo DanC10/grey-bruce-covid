@@ -11,14 +11,11 @@ greyBruceCovidTracker.component('pageHeader',{
      * @function goToPage go to selected state and change page title.
      */
     this.goToPage = (page) => {
-        
         this.selPage = page.name
         $state.go(page.state)
-        this.title = $state.$current.self.resolve.$title()
-    
     }
 
     this.$onInit = () => {
-        this.title = $state.$current.self.resolve.$title()
+        this.selPage = $state.$current.self.resolve.$title()
     }
 }});
