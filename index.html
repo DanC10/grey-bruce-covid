@@ -1,0 +1,50 @@
+<html ng-app="greyBruceCovidTracker">
+
+<head>
+    <title>Grey-Bruce COVID-19 Tracker</title>
+    <link rel="shortcut icon" href="favicon-32x32.png" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!--Angular Dependencies-->
+   <script src="node_modules/angular/angular.min.js"></script>
+   <script src="node_modules/angular-animate/angular-animate.min.js"></script>
+   <script src="node_modules/angular-aria/angular-aria.min.js"></script>
+   <script src="node_modules/angular-messages/angular-messages.min.js"></script>
+   <script src="node_modules/angular-material/angular-material.min.js"></script>
+   <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+   <script src="node_modules/angular-material/angular-material.min.js"></script>
+   <script src="node_modules/angular-sanitize/angular-sanitize.js"></script>
+   
+   <!--AmCharts Dependencies
+       Currently using a CDN, but might change this later.-->
+   <script src="//www.amcharts.com/lib/4/core.js"></script>
+   <script src="//www.amcharts.com/lib/4/charts.js"></script>
+   <script src="//www.amcharts.com/lib/4/maps.js"></script>
+
+   <!--Moment-->
+   <script src="node_modules/moment/min/moment.min.js"></script>
+   
+   <!--App files-->
+   <script src="app.module.js"></script>
+   <script src="app.routes.js"></script>
+   <!--Stylesheets-->
+   <link rel="stylesheet" href="node_modules/angular-material/angular-material.min.css"/>
+   <link rel="stylesheet" href="node_modules/angular-material-icons/angular-material-icons.css"/>
+   <link rel="stylesheet" href="node_modules/angular-material/angular-material.min.css"/>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   <link rel="stylesheet" href="css/main.css"/>
+    <!--Controllers-->
+    <script src="components/header.component.js"></script>
+    <script src="components/home.component.js"></script>
+    <script src="components/about.component.js"></script>
+    <!--Factories-->
+    <script src="factories/data.factory.js"></script>
+</head>
+
+<body>
+    <page-header></page-header>
+    <md-card style="height: calc(100% - 90px);" ui-view></md-card>
+</body>
+
+</html>
